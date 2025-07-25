@@ -111,6 +111,10 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Manifest>
+      <AdditionalManifestFiles>
+      </AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -129,14 +133,20 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <Manifest>
+      <AdditionalManifestFiles>
+      </AdditionalManifestFiles>
+    </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\AboutDialog.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MainWindow.cpp" />
     <ClCompile Include="src\pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="res\resource.h" />
+    <ClInclude Include="src\AboutDialog.h" />
     <ClInclude Include="src\MainWindow.h" />
     <ClInclude Include="src\pch.h" />
   </ItemGroup>
@@ -144,7 +154,10 @@
     <ResourceCompile Include="res\Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="..\winlamb\win10.exe.manifest" />
+    <Manifest Include="res\WinlambSample.exe.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Gioconda_256px4.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

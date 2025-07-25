@@ -24,6 +24,9 @@
     <ClCompile Include="src\MainWindow.cpp">
       <Filter>File di origine</Filter>
     </ClCompile>
+    <ClCompile Include="src\AboutDialog.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\pch.h">
@@ -35,6 +38,9 @@
     <ClInclude Include="res\resource.h">
       <Filter>File di intestazione</Filter>
     </ClInclude>
+    <ClInclude Include="src\AboutDialog.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="res\Resource.rc">
@@ -42,6 +48,13 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="..\winlamb\win10.exe.manifest" />
+    <Manifest Include="res\WinlambSample.exe.manifest">
+      <Filter>File di risorse</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Gioconda_256px4.bmp">
+      <Filter>File di risorse</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -1,0 +1,24 @@
+# Files e cartelle Visual Studio
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Risultati di compilazione
+Debug/
+Release/
+x64/
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.ipch
+*.tlog
+*.log
+*.VC.db
+*.VC.opendb
+
+# Backup e altri file superflui
+*.bak
+*.tmp
